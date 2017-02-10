@@ -1,4 +1,4 @@
-from PIL import Jenkins
+import Jenkins
 import time
 import json
 import random
