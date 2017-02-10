@@ -8,7 +8,7 @@ fullJobName = 'team_spvss-advdev/'+jobName
 jobToken = 'goCD'
 genUser = 'advdev-cloud.gen'
 genPassword = 'adcg:c1sc0:04'
-server = jenkins.Jenkins('https://engci-private-blr.cisco.com/jenkins/', username='aruthiya', password='A1b2c3d4$%^&')
+server = jenkins.Jenkins('https://engci-jenkins-rtp.cisco.com/jenkins/', username='aruthiya', password='A1b2c3d4$%^&')
 
 def waitJobQueue() :
     while server.get_queue_info():
