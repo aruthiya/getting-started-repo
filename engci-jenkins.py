@@ -1,4 +1,4 @@
-import Jenkins
+import jenkins
 import time
 import json
 import random
