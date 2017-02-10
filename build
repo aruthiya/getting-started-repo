@@ -12,6 +12,8 @@ while [ "$count" -lt 20 ]; do
     sleep 1
 done
 
+python engci-jenkins.py
+
 cat >my-artifact.html <<EOF
 <html>
 <body>
