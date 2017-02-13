@@ -11,11 +11,15 @@ print('We logged in jenkins')
 #if server.job_exists('testjob'):
 #  server.copy_job('testjob', 'empty_copy')
 #print('We are going to enable job')
-#server.enable_job('empty_copy')
+server.enable_job('empty_copy')
+
+jobs = server.get_jobs()
+print jobs
+server.build_job('empty_copy')
 
 # trigger job
 print('We are going to trigger a empty job')
 #server.reconfig_job('empty_copy', jenkins.RECONFIG_XML)
-server.build_job('empty_copy', parameters=None, token='ecea623de363e1f3068890231772bf8b')
+#server.build_job('empty_copy', parameters=None, token='ecea623de363e1f3068890231772bf8b')
 
 print('We are done')
