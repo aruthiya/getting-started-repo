@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding: utf-8
 import jenkins
 
 print('We are going inside jenkins')
