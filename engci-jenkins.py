@@ -11,7 +11,7 @@ print('We logged in jenkins')
 #if server.job_exists('testjob'):
 #  server.copy_job('testjob', 'empty_copy')
 #print('We are going to enable job')
-server.enable_job('empty_copy')
+#server.enable_job('empty_copy')
 
 #jobs = server.get_jobs()
 #print jobs
