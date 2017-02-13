@@ -5,7 +5,8 @@ print('We are going inside jenkins')
 server = jenkins.Jenkins('https://engci-private-blr.cisco.com/jenkins/ethan-blr/job/HIP/', username='aruthiya', password='David12#$')
 print('We logged in jenkins')
 
-
+token = "ecea623de363e1f3068890231772bf8b"
+job = "empty_copy"
 # Copy a job
 #print('We are going to copy the existing job')
 #if server.job_exists('testjob'):
@@ -20,6 +21,7 @@ print('We logged in jenkins')
 # trigger job
 print('We are going to trigger a empty job')
 #server.reconfig_job('empty_copy', jenkins.RECONFIG_XML)
-server.build_job('empty_copy', parameters=None, token='ecea623de363e1f3068890231772bf8b')
+#server.build_job('empty_copy', parameters=None, token='ecea623de363e1f3068890231772bf8b')
+server.build_job(job, {'token': token})
 
 print('We are done')
