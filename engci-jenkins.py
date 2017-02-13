@@ -3,7 +3,7 @@ import jenkins
 
 
 
-server = jenkins.Jenkins('https://engci-private-blr.cisco.com/jenkins/ethan-blr/job/HIP/', username='aruthiya', password='A1b2c3d4$%^&')
+server = jenkins.Jenkins('https://engci-private-blr.cisco.com/jenkins/ethan-blr/job/HIP/', username='aruthiya', password='David12#$')
 
 # Create a new job
 if not server.job_exists('empty'):
