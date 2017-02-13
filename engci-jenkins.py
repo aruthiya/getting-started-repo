@@ -16,6 +16,6 @@ print('We logged in jenkins')
 # trigger job
 print('We are going to trigger a empty job')
 #server.reconfig_job('empty_copy', jenkins.RECONFIG_XML)
-server.build_job('empty_copy', parameters=None, token='goCD')
+server.build_job('empty_copy', parameters=None, token='1790038499@1453229655615')
 
 print('We are done')
