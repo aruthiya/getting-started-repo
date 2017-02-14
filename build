@@ -14,7 +14,14 @@ done
 
 python engci-jenkins.py
 
-exit 0
+if [ $? -ne 0 ]
+then
+    echo "Job Failed"
+    exit 1
+else
+    echo "job Passed"
+fi
+    
 
 cat >my-artifact.html <<EOF
 <html>
