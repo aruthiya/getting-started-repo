@@ -42,4 +42,4 @@ if buildStatusJson.has_key( "result" ):
 else:
 	sys.exit(5)
 
-sys.exit(1)
+sys.exit(0)
