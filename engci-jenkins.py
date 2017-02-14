@@ -7,11 +7,12 @@ import base64
 
 user = 'aruthiya'
 password = 'David12#$'
-jenkinsUrl = 'https://engci-jenkins-rtp.cisco.com/jenkins/job/team_spvtg_carina/job/Debug/job/B/'
+jenkinsUrl = 'https://engci-jenkins-rtp.cisco.com/jenkins/job/team_spvtg_carina/job/Debug/job/B/Metadata_SFS_POC/lastBuild/api/json'
 jobName = 'Metadata_SFS_POC'
 
 def urlopen(url, data=None):
     '''Open a URL using the urllib2 opener.'''
+    print "URL : " + url
     request = urllib2.Request(url, data)
     base64string = base64.encodestring('%s:%s' % (user, password)).replace('\n', '')
     request.add_header("Authorization", "Basic %s" % base64string)
@@ -19,7 +20,7 @@ def urlopen(url, data=None):
     return response
 
 try:
-    jenkinsStream   = urlopen(jenkinsUrl + jobName + "/lastBuild/api/json")
+    jenkinsStream   = urlopen(jenkinsUrl)
 except urllib2.HTTPError, e:
     print "URL Error: " + str(e.code) 
     print "      (job name [" + jobName + "] probably wrong)"
