@@ -36,7 +36,8 @@ except:
 if buildStatusJson.has_key( "result" ):      
     print "[" + jobName + " #" + str(buildStatusJson["number"]) + "]: " + buildStatusJson["result"] 
     if buildStatusJson["result"] != "SUCCESS" :
-		exit(4)
+		#exit(4)
+		return FAIL
 else:
 	sys.exit(5)
 
