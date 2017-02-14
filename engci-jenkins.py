@@ -5,10 +5,10 @@ import sys
 import urllib2
 import base64
 
-user = aruthiya
-password = David12#$
+user = 'aruthiya'
+password = 'David12#$'
 jenkinsUrl = 'https://engci-jenkins-rtp.cisco.com/jenkins/job/team_spvtg_carina/job/Debug/job/B/'
-jobName = Metadata_SFS_POC
+jobName = 'Metadata_SFS_POC'
 
 def urlopen(url, data=None):
     '''Open a URL using the urllib2 opener.'''
