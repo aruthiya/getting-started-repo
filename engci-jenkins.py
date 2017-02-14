@@ -17,5 +17,5 @@ print('We logged in jenkins')
 
 # trigger job
 print('We are going to trigger a empty job')
-server.build_job('Metadata_SFS_POC', parameters=None, token='ecea623de363e1f3068890231772bf8b')
+server.build_job('Metadata_SFS_POC', parameters=None, token='eb6ccb5583324aef25ef605bb8c05c8a')
 print('We are done')
