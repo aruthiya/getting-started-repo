@@ -14,6 +14,8 @@ done
 
 python engci-jenkins.py
 
+exit 1
+
 cat >my-artifact.html <<EOF
 <html>
 <body>
