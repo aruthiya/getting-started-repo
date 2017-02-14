@@ -2,7 +2,7 @@
 import jenkins
 
 print('We are going inside jenkins')
-server = jenkins.Jenkins('https://engci-private-blr.cisco.com/jenkins/ethan-blr/job/HIP/', username='aruthiya', password='David12#$')
+server = jenkins.Jenkins('https://engci-jenkins-rtp.cisco.com/jenkins/job/team_spvtg_carina/job/Debug/job/B/', username='aruthiya', password='David12#$')
 print('We logged in jenkins')
 
 # Copy a job
@@ -17,5 +17,5 @@ print('We logged in jenkins')
 
 # trigger job
 print('We are going to trigger a empty job')
-server.build_job('testjob_1', parameters=None, token='ecea623de363e1f3068890231772bf8b')
+server.build_job('Metadata_SFS_POC', parameters=None, token='ecea623de363e1f3068890231772bf8b')
 print('We are done')
