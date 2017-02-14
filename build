@@ -20,6 +20,7 @@ then
     exit 1
 else
     echo "job Passed"
+    exit 0
 fi
     
 
