@@ -6,11 +6,11 @@ server = jenkins.Jenkins('https://engci-jenkins-rtp.cisco.com/jenkins/job/team_s
 print('We logged in jenkins')
 
 # Copy a job
-#print('We are going to copy the existing job')
-#if server.job_exists('Metadata_SFS_POC'):
-#   server.copy_job('Metadata_SFS_POC', 'Metadata_SFS_POC_1')
-#print('We are going to enable job')
-#server.enable_job('Metadata_SFS_POC_1')
+print('We are going to copy the existing job')
+if server.job_exists('Metadata_SFS_POC'):
+   server.copy_job('Metadata_SFS_POC', 'Metadata_SFS_POC_1')
+print('We are going to enable job')
+server.enable_job('Metadata_SFS_POC_1')
 
 #jobs = server.get_jobs()
 #print jobs
