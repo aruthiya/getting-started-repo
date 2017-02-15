@@ -10,6 +10,7 @@ print('We are going to copy the existing job')
 if server.job_exists('Metadata_SFS_POC'):
    server.copy_job('Metadata_SFS_POC', 'Metadata_SFS_POC_1')
 print('We are going to enable job')
+server.reconfig_job('Metadata_SFS_POC_1', jenkins.RECONFIG_XML)
 server.enable_job('Metadata_SFS_POC_1')
 
 #jobs = server.get_jobs()
