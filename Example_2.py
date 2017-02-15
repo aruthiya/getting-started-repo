@@ -17,5 +17,5 @@ server.enable_job('Metadata_SFS_POC_1')
 
 # trigger job
 print('We are going to trigger a empty job')
-server.build_job('Metadata_SFS_POC', parameters=None, token='eb6ccb5583324aef25ef605bb8c05c8a')
+server.build_job('Metadata_SFS_POC_1', parameters=None, token='eb6ccb5583324aef25ef605bb8c05c8a')
 print('We are done')
