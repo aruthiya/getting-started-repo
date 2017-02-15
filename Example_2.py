@@ -12,11 +12,11 @@ if server.job_exists('testjob'):
 print('We are going to enable job')
 server.enable_job('Metadata_SFS_POC_1')
 
-#jobs = server.get_jobs()
-#print jobs
+jobs = server.get_jobs()
+print jobs
 
 # trigger job
-print('We are going to trigger a empty job')
-server.reconfig_job('Metadata_SFS_POC_1', jenkins.RECONFIG_XML)
-server.build_job('Metadata_SFS_POC_1', parameters=None, token='ecea623de363e1f3068890231772bf8b')
+#print('We are going to trigger a empty job')
+#server.reconfig_job('Metadata_SFS_POC_1', jenkins.RECONFIG_XML)
+#server.build_job('Metadata_SFS_POC_1', parameters=None, token='ecea623de363e1f3068890231772bf8b')
 print('We are done')
